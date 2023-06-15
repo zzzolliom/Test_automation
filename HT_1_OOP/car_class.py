@@ -39,10 +39,12 @@ class Car:
     def __str__(self):
         return  f'Тип:{self.type}, цвет:{self.color}, год:{self.year} , {self.is_start}'
 
-car1 =Car()
-car1.set_year(2020)
-car1.set_color('синий')
-car1.set_type("лимузин")
-car1.start_car()
-car1.stop_car()
-print(car1)
+
+if __name__ == "__main__":
+    car1 = Car()
+    car1.set_year(2020)
+    car1.set_color('синий')
+    car1.set_type("лимузин")
+    car1.start_car()
+    car1.stop_car()
+    print(car1)
